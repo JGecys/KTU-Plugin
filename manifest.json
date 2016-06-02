@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Nepasiduok ktunui",
+  "description": "Informatika smth",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ],
+  "content_scripts": [
+  {
+	"matches": ["https://uais.cr.ktu.lt/ktuis/STUD_SS2.planas_busenos*"],
+	"js": ["jquery.min.js", "myscript.js"]
+  }
+  ]
+}

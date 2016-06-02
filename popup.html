@@ -1,0 +1,55 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Nepasiduok ktunui popup</title>
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <script src="popup.js"></script>
+	<style>
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 200px;
+			background-color: #ffffff;
+		}
+
+		li a {
+			display: block;
+			color: #000;
+			padding: 8px 0 8px 16px;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		/* Change the link color on hover */
+		li a:hover {
+			border-style: solid;
+			border-color: #000000;
+			border-width: 0 0 0 3px;
+			padding: 8px 0 8px 13px;
+		}
+	</style>
+  </head>
+  <body>
+  <a href="http://uais.cr.ktu.lt/ktuis/stp_prisijungimas" target="_blank"><img src="icon.png" style="width:50px; height:50px"></img></a>
+  
+	<ul>
+		<li><a target="_blank" href="http://ktu.edu/">KTU</a></li>
+		<li><a target="_blank" href="https://uais.cr.ktu.lt/ktuis/stp_prisijungimas">AIS</a></li>
+		<li><a target="_blank" href="https://moodle.ktu.edu/">Moodle</a></li>
+		<li><a target="_blank" href="http://moodle.if.ktu.lt/">Moodle IF</a></li>
+	</ul>
+  
+  </body>
+</html>
+
